@@ -23,7 +23,7 @@ const FOUR_EVENTS_RESPONSE = {
     pagination: { page: 1, totalPages: 1, total: 4, limit: 12 },
 };
 
-customtest("Fixture Demo @API", async ({ authenticatedPage, createOrder, testDataForOrder }) => {
+customtest("Fixture Demo", async ({ authenticatedPage, createOrder, testDataForOrder }) => {
 
     authenticatedPage.goto("https://rahulshettyacademy.com/client");
     await authenticatedPage.locator("button[routerlink*=myorder]").click();
@@ -32,7 +32,7 @@ customtest("Fixture Demo @API", async ({ authenticatedPage, createOrder, testDat
     console.log(testDataForOrder.productName);
 });
 
-customtest("sandbox banner is shown when 6 events are returned @API", async ({ loginAndGoToEvents,page }) => {
+customtest("sandbox banner is shown when 6 events are returned", async ({ loginAndGoToEvents,page }) => {
 
     await page.route('**/api/events**', async (route) => {
         const realResponse = await page.request.fetch(route.request());
@@ -55,7 +55,7 @@ customtest("sandbox banner is shown when 6 events are returned @API", async ({ l
     await expect(banner).toContainText('9 bookings');
 });
 
-customtest("sandbox banner is hidden when 4 events are returned @API", async ({ loginAndGoToEvents, page }) => {
+customtest("sandbox banner is hidden when 4 events are returned", async ({ loginAndGoToEvents, page }) => {
 
     //await page.goto('https://eventhub.rahulshettyacademy.com');
     await page.route('**/api/events**', async (route) => {
@@ -81,7 +81,7 @@ customtest("sandbox banner is hidden when 4 events are returned @API", async ({ 
  
  // fixture for this is written in fixture file but getting some error need to know why & how to run successfully
     
-    customtest('Newly created event should appear on the events page @API', async({loginAndGoToEvents,createEvent }) =>{
+    customtest('Newly created event should appear on the events page', async({loginAndGoToEvents,createEvent }) =>{
 
     await loginAndGoToEvents.goto('https://eventhub.rahulshettyacademy.com/events');
     //await expect(loginAndGoToEvents.getByText(createEvent.title)).toBeVisible();

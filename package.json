@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
-    "regression": "npx playwright test --grep @reg",
+    "test": "npx playwright test --grep '@API|@web|@reg'",
     "APITest": "npx playwright test --grep @API",
+    "regression": "npx playwright test --grep @reg",
     "WebTest": "npx playwright test --grep @web",
     "CucumberRegression": "npx cucumber-js --tags '@Regression' --retry 1 --exit --format html:cucumber-report.html"
   },
