@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --grep '@API|@web|@reg'",
+    "test": "npx playwright test",
     "APITest": "npx playwright test --grep @API",
     "regression": "npx playwright test --grep @reg",
     "WebTest": "npx playwright test --grep @web",

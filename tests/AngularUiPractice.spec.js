@@ -16,6 +16,7 @@ test('playwright special locator angular app', async ({page}) =>
     await page.getByText(" The Form has been submitted successfully!.").isVisible();
     await page.getByRole("link",{name:"Shop"}).click();
     await page.locator("app-card").filter({hasText:"Samsung Note 8"}).getByRole("button").click();
+    //this is to remove later
         
     
 
