@@ -1,0 +1,9 @@
+[ 'ADIDAS ORIGINAL', 'ZARA COAT 3', 'iphone 13 pro' ]
+AutomationAutomation Practice
+🎯 I'll help you prepare for your next QA job — Explore the QA Career Accelerator.
+3
+true
+New Order ID =  | 6a9ba8b1e7cd69710fc057da | 
+Total Rows of oreder = 7
+orderID Matched
+OrderID from Order Summary 6a9ba8b1e7cd69710fc057da

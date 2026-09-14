@@ -1,0 +1,5 @@
+Created Event : Test Event 1788587878238
+Total Seats :300
+Seats before booking: 300
+Booking Ref #145221
+Seats after booking: 299
