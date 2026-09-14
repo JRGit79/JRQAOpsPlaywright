@@ -4,8 +4,8 @@ import { stringify } from 'querystring';
 import { json } from 'stream/consumers';
 const dataSet = JSON.parse(JSON.stringify(require('../utils/placeOrderTestData.json')));
 
-for (const data of dataSet)
-{
+//for (const data of dataSet)
+//{
 test(`Client login for ${data.productName} @reg`, async ({ page }) => {
   const poManager = new POManager(page);
  
@@ -47,4 +47,4 @@ test(`Client login for ${data.productName} @reg`, async ({ page }) => {
 
 
 });
-};
+//};

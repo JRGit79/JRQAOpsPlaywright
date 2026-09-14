@@ -8,5 +8,6 @@ console.log(`ParsedIntegerOneWay= ${text2}`);
 const NumberOfSeats = parseInt(Text1);
 console.log("ParsedIntegerSecondWay= " +NumberOfSeats);
 
-
 });
+
+// Just check github.
