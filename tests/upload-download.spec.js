@@ -41,7 +41,7 @@ async function writeExcelTest(searchText, replacedText, filePath, change) {
 }
 // writeExcelTest("Banana", "Apple","/Users/Jitendra Rawat/JavaPractice/excelTest.xlsx");
 
-test('download upload excel validation @reg', async ({page}) =>
+test('download upload excel validation', async ({page}) =>
     {
         const textsearch = "Mango";
         const updatevalue = "350"

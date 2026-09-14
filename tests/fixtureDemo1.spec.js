@@ -2,7 +2,7 @@ const { test,expect } = require("../utils/fixture1.js");
 
 
 
-test('Newly created event should appear on the events page @API', async({loginAndGoToEvents,createEvent}) =>
+test('Newly created event should appear on the events page', async({loginAndGoToEvents,createEvent}) =>
     {
 
     await loginAndGoToEvents.goto('https://eventhub.rahulshettyacademy.com/events');
