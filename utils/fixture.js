@@ -1,6 +1,6 @@
 const base = require('@playwright/test');
 const { expect, request } = base;
-const eventCredentials = { email: 'mypractice1@gmail.com', password: 'Student@#000' };
+const eventCredentials = { email: 'mypractice@gmail.com', password: 'Student@#000' };
 const BASE_URL = 'https://eventhub.rahulshettyacademy.com';
 const API_BASE_URL = 'https://api.eventhub.rahulshettyacademy.com';
 
