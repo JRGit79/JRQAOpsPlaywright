@@ -1,4 +1,5 @@
 // @ts-check
+//This is for practicing other configuration
 import { defineConfig, devices } from '@playwright/test';
 import { trace } from 'console';
 
