@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  retries: 1,
+  //retries: 1,
   
   /* Maximum time one test can run for */
   timeout: 31 * 1000,
@@ -21,6 +21,7 @@ export default defineConfig({
     channel: 'chrome',              // <-- FORCES PLAYWRIGHT TO USE YOUR LOCAL GOOGLE CHROME
     headless: true,
     screenshot: 'on',
-    trace: 'retain-on-failure', 
+    //trace: 'retain-on-failure', 
+    trace: 'on',
   },
 });

@@ -12,9 +12,12 @@ const config = ({
   timeout: 31 * 1000,
 
   // Time out for exclusively assertions default timeout: 5000
-  expect: {
-    timeout: 6000
+  expect: { timeout: 6000 }, // Default timeout for expect() assertions
+  use:{
+    actionTimeout: 10000, // Click , fill , check , select , drag and drop , hover , scroll etc. default timeout: 0
+    navigationTimeout: 30000,
   },
+  globalTimeout: 30 * 1000, // Timeout for the entire test suite, including setup and teardown
 
   reporter: 'html',
 
