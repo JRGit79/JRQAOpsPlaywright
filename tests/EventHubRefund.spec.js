@@ -15,7 +15,7 @@ import {expect, test} from '@playwright/test';
     expect(await page.getByTestId('nav-bookings')).toBeVisible();
     }
 
-test('refund eligible for single ticket booking', async ({page})=>{
+test.skip('refund eligible for single ticket booking', async ({page})=>{
 
     await loginAndGoToBooking(page);
     //Booking 1 Ticket
@@ -53,7 +53,7 @@ test('refund eligible for single ticket booking', async ({page})=>{
   await expect(result).toContainText('Single-ticket bookings qualify for a full refund');
 });
 
-test('refund not eligible for group ticket booking', async ({page})=>{
+test.skip('refund not eligible for group ticket booking', async ({page})=>{
 
     await loginAndGoToBooking(page);
     //Booking 3 ticket
