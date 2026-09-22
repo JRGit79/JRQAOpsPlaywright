@@ -3,7 +3,7 @@ const { test, expect, APIUtils, request } = require('@playwright/test');
 const BASE_URL = 'https://eventhub.rahulshettyacademy.com';
 const API_URL = 'https://api.eventhub.rahulshettyacademy.com/api';
 const YAHOO_USER = { email: 'mypractice1@yahoo.com', password: 'Student@#000' };
-const GMAIL_USER = { email: 'mypractice1@gmail.com', password: 'Student@#000' };
+const GMAIL_USER = { email: 'mypractice@gmail.com', password: 'Student@#000' };
 
 
 async function loginAs(page, user) {
@@ -44,6 +44,7 @@ test('gmail user sees Access Denied when viewing yahoo user booking', async ({ p
             quantity: 1,
         },
     });
+   
     expect(bookingRes.ok()).toBeTruthy();
     const yahooBookingId = (await bookingRes.json()).data.id;
     console.log(`Yahoo booking created via API. ID: ${yahooBookingId}`);
