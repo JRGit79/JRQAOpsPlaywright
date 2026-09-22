@@ -40,7 +40,7 @@ test('gmail user sees Access Denied when viewing yahoo user booking', async ({ p
             customerEmail: "mypractice1@yahoo.com",
             customerName: "Yahoo User",
             customerPhone: "8123456789",
-            eventId: 3,
+            eventId: Number(eventID),
             quantity: 1,
         },
     });
